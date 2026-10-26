@@ -1,4 +1,4 @@
-/* Trial dark look: only applies when the page is opened with ?look=dark (see theme.js) */
+/* Dark look: the live default since 26 Oct (light backup = git tag light-theme-2026-10-26) */
 html.dark {
   --bg: #16213A;
   --bg-2: #1F2D4D;
