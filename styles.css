@@ -307,7 +307,7 @@ blockquote { margin: 28px 0; padding: 0 0 0 24px; border-left: 4px solid var(--s
 
 /* Footer */
 .footer-brand img { height: 72px; width: auto; margin-bottom: 8px; }
-.footer-links a { color: var(--white); }
+.footer-links a { color: var(--white); white-space: nowrap; }
 
 /* Mobile */
 @media (max-width: 900px) {
@@ -337,6 +337,9 @@ blockquote { margin: 28px 0; padding: 0 0 0 24px; border-left: 4px solid var(--s
   .service { grid-template-columns: 1fr; gap: 6px; }
   .section { padding: 64px 0; }
   .footer-legal { text-align: left; }
+  .footer-row { flex-direction: column; gap: 20px; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
+  .footer-links p { margin: 0; }
 }
 @media (max-width: 520px) {
         .form-row { grid-template-columns: 1fr; }
