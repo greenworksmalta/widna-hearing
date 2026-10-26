@@ -8,8 +8,4 @@
   } catch (e) {}
   if (!dark) return;
   document.documentElement.classList.add('dark');
-  document.addEventListener('DOMContentLoaded', function () {
-    var logo = document.querySelector('.brand img');
-    if (logo) logo.src = 'assets/widna-logo-white.png';
-  });
 })();

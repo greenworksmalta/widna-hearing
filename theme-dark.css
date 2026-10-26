@@ -13,13 +13,7 @@ html.dark body { background: var(--bg); color: var(--text); }
 html.dark a { color: var(--link); }
 html.dark h1, html.dark h2, html.dark h3 { color: var(--white); }
 
-/* Header */
-html.dark .site-header { background: rgba(22,33,58,.96); border-bottom-color: var(--rule); }
-html.dark .brand-tag { color: var(--white); }
-html.dark .main-nav a { color: var(--text); }
-html.dark .main-nav a:hover { color: var(--sun); }
-html.dark .icon-btn { background: var(--bg-2); border-color: var(--rule); color: var(--white); }
-html.dark .header-call { color: var(--link); }
+/* Header stays white so the original teal logo stands out */
 
 /* Hero: the one bold moment, a teal glow behind Denise */
 html.dark .hero { background: radial-gradient(ellipse 60% 80% at 82% 45%, rgba(30,116,116,.55), transparent 70%), var(--bg); }
@@ -83,7 +77,5 @@ html.dark .form-msg { color: var(--link); }
 html.dark .site-footer { background: #0F1729; }
 
 @media (max-width: 900px) {
-  html.dark .main-nav { background: var(--bg); border-bottom-color: var(--rule); }
-  html.dark .main-nav a { border-bottom-color: var(--rule); }
   html.dark .hero { background: var(--bg); }
 }
