@@ -88,6 +88,7 @@ p { margin: 0 0 1em; }
 .hero-text { padding-bottom: 0; }
 .hero-role { font-weight: 600; color: var(--teal); margin-bottom: .4em; }
 .hero-name { font: 600 1.35rem/1.3 var(--serif); color: var(--navy); }
+.hero-cred { font-weight: 500; font-size: .95rem; color: var(--muted); }
 .hero-lede { font-size: 1.3rem; max-width: 34ch; color: var(--ink); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0; }
 .langs { color: var(--muted); font-size: 1rem; }
