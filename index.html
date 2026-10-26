@@ -18,8 +18,136 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=36">
-<link rel="stylesheet" href="theme-dark.css?v=11">
+<link rel="stylesheet" href="styles.css?v=37">
+<link rel="stylesheet" href="theme-dark.css?v=12">
+<!-- Business details for Google; uses the final domain -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalBusiness",
+   "@id": "https://widnahearing.mt/#business",
+   "name": "Widna Hearing",
+   "description": "Hearing assessments for adults and children aged 5 and up, Bernafon hearing aids, custom ear protection and workplace hearing screening in Malta.",
+   "url": "https://widnahearing.mt/",
+   "telephone": "+35679427821",
+   "email": "widna.services@gmail.com",
+   "image": "https://widnahearing.mt/assets/og-image.jpg",
+   "logo": "https://widnahearing.mt/assets/widna-logo.png",
+   "areaServed": "Malta",
+   "knowsLanguage": [
+    "en",
+    "mt",
+    "it"
+   ],
+   "sameAs": [
+    "https://www.facebook.com/profile.php?id=61587372173159"
+   ],
+   "founder": {
+    "@type": "Person",
+    "name": "Denise Aquilina",
+    "jobTitle": "Registered Nurse and Audiologist"
+   },
+   "department": [
+    {
+     "@type": "MedicalBusiness",
+     "name": "Widna Hearing at Clarifon Hearing Centre",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Triq Balaguer",
+      "addressLocality": "Ħal Balzan",
+      "postalCode": "BZN 1162",
+      "addressCountry": "MT"
+     },
+     "telephone": "+35679427821",
+     "openingHoursSpecification": [
+      {
+       "@type": "OpeningHoursSpecification",
+       "dayOfWeek": [
+        "Thursday",
+        "Friday"
+       ],
+       "opens": "09:00",
+       "closes": "13:00"
+      },
+      {
+       "@type": "OpeningHoursSpecification",
+       "dayOfWeek": [
+        "Thursday",
+        "Friday"
+       ],
+       "opens": "16:00",
+       "closes": "19:00"
+      }
+     ]
+    },
+    {
+     "@type": "MedicalBusiness",
+     "name": "Widna Hearing at Mediatrix Dental Centre, Qormi",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "10 Guże Duca Street",
+      "addressLocality": "Qormi",
+      "postalCode": "QRM 9088",
+      "addressCountry": "MT"
+     },
+     "telephone": "+35679427821"
+    },
+    {
+     "@type": "MedicalBusiness",
+     "name": "Widna Hearing at Mediatrix Dental Centre, Żabbar",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 Sanctuary Street",
+      "addressLocality": "Żabbar",
+      "postalCode": "ZBR 1010",
+      "addressCountry": "MT"
+     },
+     "telephone": "+35679427821"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does a hearing test hurt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The test is painless. You listen to soft sounds through headphones and respond when you hear them. Tympanometry, if needed, is a gentle puff of air pressure in the ear that takes a few seconds."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does the appointment take?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Between 30 and 45 minutes, including time to go through your results and options."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I bring someone with me?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Many people bring a family member or friend, and it often helps to have a familiar voice in the room when discussing hearing aids."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What should I bring?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A list of your current medication and any relevant medical history. If you already wear hearing aids, bring them along too."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -36,7 +164,7 @@
       <a href="#prices">Prices</a>
       <a href="#find-me">Locations</a>
     </nav>
-    <a class="btn btn-wa btn-small header-wa" href="https://wa.me/35679427821">WhatsApp</a>
+    <a class="btn btn-wa btn-small header-wa" href="https://wa.me/35679427821?text=Hi%20Denise%2C%20I%27d%20like%20to%20book%20a%20hearing%20test.">WhatsApp</a>
     <a class="icon-btn header-call" href="tel:+35679427821" aria-label="Call Denise">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
     </a>
@@ -59,7 +187,7 @@
       <h1>Your hearing, in caring hands.</h1>
       <p class="hero-lede">From workplace hearing protection to personalised audiology care, dedicated to protecting, restoring and improving hearing, with support at every step of the way.</p>
       <div class="hero-actions">
-        <a class="btn btn-wa" href="https://wa.me/35679427821">Book on WhatsApp</a>
+        <a class="btn btn-wa" href="https://wa.me/35679427821?text=Hi%20Denise%2C%20I%27d%20like%20to%20book%20a%20hearing%20test.">Book on WhatsApp</a>
         <a class="btn btn-ghost" href="tel:+35679427821">Call +356 7942 7821</a>
       </div>
       <ul class="cred-badges" aria-label="Qualifications and registration">
@@ -318,15 +446,40 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <h2>Common questions</h2>
+    <div class="faq">
+      <details class="faq-item">
+        <summary>Does a hearing test hurt?</summary>
+        <p>No. The test is painless. You listen to soft sounds through headphones and respond when you hear them. Tympanometry, if needed, is a gentle puff of air pressure in the ear that takes a few seconds.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does the appointment take?</summary>
+        <p>Between 30 and 45 minutes, including time to go through your results and options.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I bring someone with me?</summary>
+        <p>Yes. Many people bring a family member or friend, and it often helps to have a familiar voice in the room when discussing hearing aids.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What should I bring?</summary>
+        <p>A list of your current medication and any relevant medical history. If you already wear hearing aids, bring them along too.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
-<section class="section" id="contact">
+<section class="section section-sand" id="contact">
   <div class="wrap contact-grid">
     <div>
       <h2>Get in touch</h2>
       <p class="section-lede">The quickest way to book is WhatsApp.</p>
       <p class="langs">Appointments are available in English, Maltese or Italian, whichever you're most comfortable with.</p>
       <ul class="contact-list">
-        <li><a href="https://wa.me/35679427821"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg><span><strong>WhatsApp</strong>+356 7942 7821</span></a></li>
+        <li><a href="https://wa.me/35679427821?text=Hi%20Denise%2C%20I%27d%20like%20to%20book%20a%20hearing%20test."><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg><span><strong>WhatsApp</strong>+356 7942 7821</span></a></li>
         <li><a href="tel:+35679427821"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span><strong>Call</strong>+356 7942 7821</span></a></li>
         <li><a href="mailto:widna.services@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V17h16V7.4l-8 5.3zM5.4 7l6.6 4.4L18.6 7z"/></svg><span><strong>Email</strong>widna.services@gmail.com</span></a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61587372173159"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4A20 20 0 0 0 14.3 4c-2.2 0-3.8 1.4-3.8 3.9v2.6H8v3h2.5V21z"/></svg><span><strong>Facebook</strong>Widna</span></a></li>
@@ -351,6 +504,17 @@
         <label>Type of work<input name="industry" placeholder="For example construction, manufacturing, airport"></label>
       </div>
       <label>Your message<textarea name="message" rows="4" required></textarea></label>
+      <label>How did you hear about Widna?<select name="source">
+        <option value="">Choose one (optional)</option>
+        <option>Google search</option>
+        <option>Google Maps</option>
+        <option>Facebook</option>
+        <option>Family or friend</option>
+        <option>My doctor or pharmacist</option>
+        <option>Clarifon Hearing Centre</option>
+        <option>My employer</option>
+        <option>Other</option>
+      </select></label>
       <p class="form-note">Your details are only used to reply to you.</p>
       <button class="btn btn-teal" type="submit">Send enquiry</button>
       <p class="form-msg" role="status"></p>
@@ -410,7 +574,7 @@
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/35679427821" aria-label="Message Denise on WhatsApp">
+<a class="wa-float" href="https://wa.me/35679427821?text=Hi%20Denise%2C%20I%27d%20like%20to%20book%20a%20hearing%20test." aria-label="Message Denise on WhatsApp">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
 </a>
 
