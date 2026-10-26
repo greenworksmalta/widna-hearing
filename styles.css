@@ -383,3 +383,4 @@ body { line-height: 1.65; }
 .faq-item summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font: 600 1.6rem/1 var(--sans); color: var(--teal); }
 .faq-item[open] summary::after { content: "\2212"; }
 .faq-item p { margin: 0 0 20px; max-width: 70ch; }
+.style-photo { width: 132px; height: 132px; object-fit: contain; margin-bottom: 12px; }
