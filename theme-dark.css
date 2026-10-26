@@ -14,6 +14,9 @@ html.dark a { color: var(--link); }
 html.dark h1, html.dark h2, html.dark h3 { color: var(--white); }
 
 /* Header stays white so the original teal logo stands out */
+html.dark .main-nav a { color: var(--ink); }
+html.dark .main-nav a:hover { color: var(--teal); }
+html.dark .icon-btn { color: var(--navy); }
 
 /* Hero: the one bold moment, a teal glow behind Denise */
 html.dark .hero { background: radial-gradient(ellipse 60% 80% at 82% 45%, rgba(30,116,116,.55), transparent 70%), var(--bg); }
