@@ -346,3 +346,5 @@ blockquote { margin: 28px 0; padding: 0 0 0 24px; border-left: 4px solid var(--s
   .form-card { padding: 22px; }
   .door { padding: 24px; }
 }
+.section-sand .price-card { background: var(--white); }
+.section-sand .price-card .price-table th, .section-sand .price-card .price-table td { border-bottom-color: var(--line); }
