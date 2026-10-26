@@ -369,3 +369,4 @@ body { line-height: 1.65; }
 .hero-cred, .langs, .door-text, .price-table th span, .style-card span, .audiogram figcaption, .expect-steps span,
 .form input:not([type="radio"]):not([type="checkbox"]), .form textarea, .form .consent, .site-footer, .legal-updated, .video-slot p { font-size: 1.125rem; }
 .tag, .price-table td small { font-size: 1rem; }
+.form-note { margin: 0; font-size: 1.0625rem; color: var(--muted); }

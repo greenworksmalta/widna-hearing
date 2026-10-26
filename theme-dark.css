@@ -92,3 +92,4 @@ html.dark .sc-aid, html.dark .sc-tube { stroke: var(--link); }
 html.dark body { font-weight: 450; }
 html.dark .cred-badges li { border-color: rgba(255,255,255,.22); color: var(--white); background: rgba(255,255,255,.04); }
 html.dark .cred-badges svg { stroke: var(--sun); }
+html.dark .form-note { color: var(--soft); }
