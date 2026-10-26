@@ -4,7 +4,7 @@ html.dark {
   --bg-2: #1F2D4D;
   --card: #26375C;
   --text: #E6EBF3;
-  --soft: #AEB9CD;
+  --soft: #C6CFDE;
   --rule: rgba(255,255,255,.14);
   --link: #7FD1CB;
 }
@@ -89,3 +89,6 @@ html.dark .style-card strong { color: var(--white); }
 html.dark .style-card span { color: var(--soft); }
 html.dark .sc-ear { stroke: rgba(255,255,255,.55); }
 html.dark .sc-aid, html.dark .sc-tube { stroke: var(--link); }
+html.dark body { font-weight: 450; }
+html.dark .cred-badges li { border-color: rgba(255,255,255,.22); color: var(--white); background: rgba(255,255,255,.04); }
+html.dark .cred-badges svg { stroke: var(--sun); }

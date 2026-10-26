@@ -357,3 +357,15 @@ blockquote { margin: 28px 0; padding: 0 0 0 24px; border-left: 4px solid var(--s
 .section-sand .price-card .price-table th, .section-sand .price-card .price-table td { border-bottom-color: var(--line); }
 #hearing-aids .funding { background: var(--sand); }
 .expect-note { margin: 28px 0 0; padding: 18px 22px; background: var(--teal-soft); border-radius: var(--radius-sm); max-width: 760px; color: var(--ink); }
+
+/* Credential badges (hero) */
+.cred-badges { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 10px; }
+.cred-badges li { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 12px; border: 1px solid var(--line); border-radius: 999px; font-weight: 600; font-size: 1rem; color: var(--navy); }
+.cred-badges svg { width: 24px; height: 24px; flex: none; fill: none; stroke: var(--teal); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Readability for older visitors: nothing smaller than 17px, supporting text at 18px */
+body { line-height: 1.65; }
+.btn, .main-nav a, .form label, .form legend, .door-for, .about-creds dt, .contact-list span { font-size: 1.0625rem; }
+.hero-cred, .langs, .door-text, .price-table th span, .style-card span, .audiogram figcaption, .expect-steps span,
+.form input:not([type="radio"]):not([type="checkbox"]), .form textarea, .form .consent, .site-footer, .legal-updated, .video-slot p { font-size: 1.125rem; }
+.tag, .price-table td small { font-size: 1rem; }
