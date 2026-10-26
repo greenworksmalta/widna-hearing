@@ -82,3 +82,4 @@ html.dark .site-footer { background: #0F1729; }
 @media (max-width: 900px) {
   html.dark .hero { background: var(--bg); }
 }
+html.dark #hearing-aids .funding { background: var(--card); }
