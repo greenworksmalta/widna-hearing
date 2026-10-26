@@ -83,3 +83,4 @@ html.dark .site-footer { background: #0F1729; }
   html.dark .hero { background: var(--bg); }
 }
 html.dark #hearing-aids .funding { background: var(--card); }
+html.dark .expect-note { background: var(--card); color: var(--text); }

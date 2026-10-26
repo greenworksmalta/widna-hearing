@@ -349,3 +349,4 @@ blockquote { margin: 28px 0; padding: 0 0 0 24px; border-left: 4px solid var(--s
 .section-sand .price-card { background: var(--white); }
 .section-sand .price-card .price-table th, .section-sand .price-card .price-table td { border-bottom-color: var(--line); }
 #hearing-aids .funding { background: var(--sand); }
+.expect-note { margin: 28px 0 0; padding: 18px 22px; background: var(--teal-soft); border-radius: var(--radius-sm); max-width: 760px; color: var(--ink); }
