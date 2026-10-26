@@ -1,0 +1,89 @@
+/* Trial dark look: only applies when the page is opened with ?look=dark (see theme.js) */
+html.dark {
+  --bg: #16213A;
+  --bg-2: #1F2D4D;
+  --card: #26375C;
+  --text: #E6EBF3;
+  --soft: #AEB9CD;
+  --rule: rgba(255,255,255,.14);
+  --link: #7FD1CB;
+}
+
+html.dark body { background: var(--bg); color: var(--text); }
+html.dark a { color: var(--link); }
+html.dark h1, html.dark h2, html.dark h3 { color: var(--white); }
+
+/* Header */
+html.dark .site-header { background: rgba(22,33,58,.96); border-bottom-color: var(--rule); }
+html.dark .brand-tag { display: none; }
+html.dark .main-nav a { color: var(--text); }
+html.dark .main-nav a:hover { color: var(--sun); }
+html.dark .icon-btn { background: var(--bg-2); border-color: var(--rule); color: var(--white); }
+html.dark .header-call { color: var(--link); }
+
+/* Hero: the one bold moment, a teal glow behind Denise */
+html.dark .hero { background: radial-gradient(ellipse 60% 80% at 82% 45%, rgba(30,116,116,.55), transparent 70%), var(--bg); }
+html.dark .hero-role { color: var(--link); }
+html.dark .hero-name { color: var(--white); }
+html.dark .hero-cred, html.dark .langs { color: var(--soft); }
+html.dark .hero-lede { color: var(--text); }
+html.dark .sound-arcs path { stroke: var(--sun); }
+html.dark .btn-ghost { border-color: rgba(255,255,255,.7); color: var(--white); }
+html.dark .btn-ghost:hover { background: var(--white); color: var(--navy); }
+
+/* Two doors */
+html.dark .doors { background: var(--bg-2); }
+html.dark .door-clinic { background: var(--teal); color: var(--white); }
+html.dark .door-work { background: var(--sun); color: var(--navy); }
+
+/* Sections */
+html.dark .section-sand { background: var(--bg-2); }
+html.dark .section-navy { background: var(--teal-dark); }
+html.dark .section-lede { color: var(--soft); }
+html.dark .section-navy .section-lede, html.dark .law-note p { color: #DDEFEC; }
+
+/* Clinic */
+html.dark .services { border-top-color: var(--sun); }
+html.dark .service { border-bottom-color: var(--rule); }
+html.dark .service p, html.dark .expect-steps span { color: var(--soft); }
+html.dark .expect-steps strong { color: var(--white); }
+html.dark .expect-steps li:not(:last-child)::after { background: var(--rule); }
+
+/* Cards */
+html.dark .funding, html.dark .place, html.dark .price-card, html.dark .form-card { background: var(--card); }
+html.dark .audiogram figcaption { color: var(--navy); }
+
+/* Prices */
+html.dark .price-table th { color: var(--white); }
+html.dark .price-table th span, html.dark .price-table td small, html.dark .price-note { color: var(--soft); }
+html.dark .price-table td { color: var(--sun); }
+html.dark .price-card .price-table th, html.dark .price-card .price-table td { border-bottom-color: var(--rule); }
+
+/* About */
+html.dark blockquote { color: var(--white); }
+html.dark .about-creds dt { color: var(--soft); }
+html.dark .about-creds dd { color: var(--white); }
+
+/* Locations */
+html.dark .addr { color: var(--soft); }
+html.dark .hours { color: var(--white); }
+html.dark .tag { background: rgba(127,209,203,.16); color: var(--link); }
+
+/* Contact and forms */
+html.dark .contact-list a { border-color: var(--rule); color: var(--text); }
+html.dark .contact-list a:hover { border-color: var(--link); }
+html.dark .contact-list svg { color: var(--link); }
+html.dark .contact-list strong { color: var(--white); }
+html.dark .form label, html.dark .form legend { color: var(--white); }
+html.dark .form .consent { color: var(--text); }
+html.dark .chips label { color: var(--ink); }
+html.dark .form-msg { color: var(--link); }
+
+/* Footer */
+html.dark .site-footer { background: #0F1729; }
+
+@media (max-width: 900px) {
+  html.dark .main-nav { background: var(--bg); border-bottom-color: var(--rule); }
+  html.dark .main-nav a { border-bottom-color: var(--rule); }
+  html.dark .hero { background: var(--bg); }
+}
