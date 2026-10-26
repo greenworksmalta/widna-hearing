@@ -10,7 +10,7 @@ html.dark {
 }
 
 html.dark body { background: var(--bg); color: var(--text); }
-html.dark a { color: var(--link); }
+:where(html.dark) a { color: var(--link); }
 html.dark h1, html.dark h2, html.dark h3 { color: var(--white); }
 
 /* Header stays white so the original teal logo stands out */
