@@ -148,6 +148,10 @@ p { margin: 0 0 1em; }
 .ha-intro { grid-area: intro; }
 .ha-more { grid-area: more; }
 .audiogram { grid-area: chart; align-self: start; position: sticky; top: 130px; }
+.ha-grid:has(.audiogram-img) { grid-template-columns: 1fr; grid-template-areas: "intro" "chart" "more"; }
+.audiogram-img { position: static; margin: 8px 0 32px; }
+.audiogram-img img { width: 100%; height: auto; border-radius: var(--radius-sm); }
+.ha-intro, .ha-more { max-width: 760px; }
 .ag-key { display: inline-block; width: 14px; height: 10px; border-radius: 6px; background: var(--sun); opacity: .6; margin-right: 8px; vertical-align: middle; }
 .ha-styles-title { margin-top: .4em; }
 .ha-styles { padding-left: 1.1em; }
