@@ -84,3 +84,8 @@ html.dark .site-footer { background: #0F1729; }
 }
 html.dark #hearing-aids .funding { background: var(--card); }
 html.dark .expect-note { background: var(--card); color: var(--text); }
+html.dark .style-card { background: var(--card); }
+html.dark .style-card strong { color: var(--white); }
+html.dark .style-card span { color: var(--soft); }
+html.dark .sc-ear { stroke: rgba(255,255,255,.55); }
+html.dark .sc-aid, html.dark .sc-tube { stroke: var(--link); }
