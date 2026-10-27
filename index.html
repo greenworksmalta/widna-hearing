@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=38">
+<link rel="stylesheet" href="styles.css?v=39">
 <link rel="stylesheet" href="theme-dark.css?v=12">
 <!-- Business details for Google; uses the final domain -->
 <script type="application/ld+json">
@@ -228,6 +228,10 @@
   <div class="wrap">
     <h2>For you and your family</h2>
     <p class="section-lede">Clinic services</p>
+    <div class="photo-strip">
+      <img src="assets/clinic-adult.jpg" width="960" height="720" loading="lazy" alt="Older man wearing headphones">
+      <img src="assets/clinic-child.jpg" width="960" height="720" loading="lazy" alt="Child having his ear checked with an otoscope">
+    </div>
     <div class="services">
       <article class="service">
         <h3>Adult hearing assessment</h3>
@@ -274,6 +278,11 @@
   <div class="wrap">
     <h2>Hearing screening at your workplace</h2>
     <p class="section-lede">On-site hearing tests for your staff, with minimal disruption to your day and the report you need for your records.</p>
+    <div class="photo-strip photo-strip-3">
+      <img src="assets/work-defenders.jpg" width="960" height="720" loading="lazy" alt="Worker in safety glasses putting on ear defenders">
+      <img src="assets/work-earplug.jpg" width="960" height="720" loading="lazy" alt="Worker in a hard hat fitting earplugs">
+      <img src="assets/work-earmuffs.jpg" width="960" height="720" loading="lazy" alt="Ear defenders hanging on a stand">
+    </div>
     <aside class="law-note">
       <h3>Why it matters</h3>
       <p>Under Maltese law (S.L. 646.20), employers must protect staff from noise at work, including hearing checks for those exposed above set noise levels. Routine baseline and annual audiograms help you stay compliant and give you clear, documented evidence that helps defend against hearing loss claims.</p>
@@ -486,6 +495,7 @@
       </ul>
     </div>
     <form class="form form-card" id="enquiry-form" novalidate>
+      <input type="checkbox" name="botcheck" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
       <fieldset class="chips">
         <legend>This is for</legend>
         <label><input type="radio" name="for" value="me" checked> Me or my family</label>
@@ -528,6 +538,7 @@
     <h2>Leave a review</h2>
     <p class="section-lede">Thank you for taking a moment. Every review is read before it appears on the site.</p>
     <form class="form" id="review-form" novalidate>
+      <input type="checkbox" name="botcheck" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="form-row">
         <label>First name<input name="name" required autocomplete="given-name"></label>
         <label>Town<input name="town"></label>
@@ -603,11 +614,40 @@
     syncFor();
   }));
 
-  // Draft only: forms are connected to email at launch
-  document.querySelectorAll('form').forEach(f => f.addEventListener('submit', e => {
+  // Forms: sent by email to widna.services@gmail.com through Web3Forms (the access key is public by design)
+  const FORM_KEY = 'ab8efcc0-19e9-44e3-bc06-7bc28f66622a';
+  const SUBJECTS = { 'enquiry-form': 'New enquiry from widnahearing.mt', 'review-form': 'New review to approve, widnahearing.mt' };
+  const THANKS = {
+    'enquiry-form': 'Thank you. Your message has been sent, and Denise will reply soon.',
+    'review-form': 'Thank you for your review. It will appear on the site once approved.'
+  };
+  document.querySelectorAll('#enquiry-form, #review-form').forEach(f => f.addEventListener('submit', async e => {
     e.preventDefault();
+    const msg = f.querySelector('.form-msg');
     if (!f.checkValidity()) { f.reportValidity(); return; }
-    f.querySelector('.form-msg').textContent = 'Preview only: this form will send to Denise once the site is live.';
+    if (f.id === 'enquiry-form' && !f.phone.value.trim() && !f.email.value.trim()) {
+      msg.textContent = 'Please add a phone number or an email address so Denise can reply.';
+      return;
+    }
+    const btn = f.querySelector('button[type="submit"]');
+    const data = new FormData(f);
+    data.append('access_key', FORM_KEY);
+    data.append('subject', SUBJECTS[f.id]);
+    data.append('from_name', 'Widna Hearing website');
+    btn.disabled = true;
+    msg.textContent = 'Sending...';
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+      const out = await res.json();
+      if (!out.success) throw new Error(out.message);
+      f.reset();
+      if (f.id === 'enquiry-form') syncFor();
+      msg.textContent = THANKS[f.id];
+    } catch (err) {
+      msg.textContent = 'Sorry, the message did not send. Please try again, or message Denise on WhatsApp on +356 7942 7821.';
+    } finally {
+      btn.disabled = false;
+    }
   }));
 </script>
 </body>

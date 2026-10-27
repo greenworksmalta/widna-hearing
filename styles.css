@@ -384,3 +384,12 @@ body { line-height: 1.65; }
 .faq-item[open] summary::after { content: "\2212"; }
 .faq-item p { margin: 0 0 20px; max-width: 70ch; }
 .style-photo { width: 132px; height: 132px; object-fit: contain; margin-bottom: 12px; }
+
+/* Photo strips (stock photos from Pexels, free licence) */
+.photo-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 28px 0 8px; }
+.photo-strip-3 { grid-template-columns: repeat(3, 1fr); }
+.photo-strip img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-sm); }
+@media (max-width: 600px) {
+  .photo-strip, .photo-strip-3 { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .photo-strip-3 img:last-child { display: none; }
+}
