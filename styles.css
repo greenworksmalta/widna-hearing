@@ -393,3 +393,19 @@ body { line-height: 1.65; }
   .photo-strip, .photo-strip-3 { grid-template-columns: 1fr 1fr; gap: 10px; }
   .photo-strip-3 img:last-child { display: none; }
 }
+
+/* Header: the tagline is placed in px so it never stretches with the logo box; nav keeps clear of it */
+.brand-tag { left: 51px; }
+.main-nav { gap: 18px; margin-left: 150px; }
+.main-nav a { font-size: 1rem; white-space: nowrap; }
+@media (max-width: 520px) { .brand-tag { left: 39px; } }
+/* Below 1200px the full menu no longer fits beside the logo: use the menu button, as on phones */
+@media (min-width: 901px) and (max-width: 1199px) {
+  .header-row { gap: 10px; position: relative; }
+  .main-nav { display: none; margin-left: 0; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--white); border-bottom: 1px solid var(--line); padding: 8px var(--gutter) 16px; box-shadow: 0 12px 24px rgba(31,45,77,.12); }
+  .main-nav.is-open { display: flex; }
+  .main-nav a { padding: 14px 0; font-size: 1.1rem; border-bottom: 1px solid var(--line); }
+  .main-nav a:last-child { border-bottom: 0; }
+  .icon-btn { display: inline-flex; }
+}
+@media (max-width: 900px) { .main-nav { margin-left: 0; } }
