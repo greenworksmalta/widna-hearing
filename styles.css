@@ -391,7 +391,8 @@ body { line-height: 1.65; }
 .photo-strip img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-sm); }
 @media (max-width: 600px) {
   .photo-strip, .photo-strip-3 { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .photo-strip-3 img:last-child { display: none; }
+  /* three photos on phones: the first runs full width, the other two sit side by side */
+  .photo-strip-3 img:first-child { grid-column: 1 / -1; }
 }
 
 /* Header: the tagline is placed in px so it never stretches with the logo box; nav keeps clear of it */
