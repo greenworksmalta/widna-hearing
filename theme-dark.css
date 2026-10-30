@@ -97,3 +97,5 @@ html.dark .section-sand .form-card { background: var(--card); }
 html.dark .faq, html.dark .faq-item { border-color: var(--rule); }
 html.dark .faq-item summary { color: var(--white); }
 html.dark .faq-item summary::after { color: var(--sun); }
+html.dark .service-body .service-sub, html.dark .service-steps strong { color: var(--white); }
+html.dark .service-steps { color: var(--soft); }

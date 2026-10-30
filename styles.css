@@ -410,3 +410,8 @@ body { line-height: 1.65; }
   .icon-btn { display: inline-flex; }
 }
 @media (max-width: 900px) { .main-nav { margin-left: 0; } }
+.service-body p { margin: 0; }
+.service-body .service-sub { margin: 14px 0 6px; font-weight: 600; color: var(--ink); }
+.service-steps { margin: 0; padding-left: 1.3em; color: var(--muted); max-width: 64ch; }
+.service-steps li { margin-bottom: 8px; padding-left: 4px; }
+.service-steps strong { color: var(--ink); font-weight: 600; }
