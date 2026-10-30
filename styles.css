@@ -276,7 +276,7 @@ blockquote { margin: 28px 0; padding: 0 0 0 24px; border-left: 4px solid var(--s
 
 /* What to expect */
 .expect { margin-top: 56px; }
-.expect-steps { list-style: none; padding: 0; margin: 20px 0 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; counter-reset: ex; }
+.expect-steps { list-style: none; padding: 0; margin: 20px 0 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; counter-reset: ex; }
 .expect-steps li { counter-increment: ex; position: relative; padding-top: 48px; }
 .expect-steps li::before { content: counter(ex); position: absolute; top: 0; left: 0; width: 34px; height: 34px; border-radius: 50%; background: var(--teal); color: var(--white); font-weight: 700; display: grid; place-items: center; font-size: .95rem; }
 .expect-steps li:not(:last-child)::after { content: ""; position: absolute; top: 17px; left: 44px; right: -10px; height: 2px; background: var(--teal-soft); }
