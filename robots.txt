@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /go/
+
+Sitemap: https://widnahearing.mt/sitemap.xml
