@@ -415,6 +415,5 @@ body { line-height: 1.65; }
 .service-steps { margin: 0; padding-left: 1.3em; color: var(--muted); max-width: 64ch; }
 .service-steps li { margin-bottom: 8px; padding-left: 4px; }
 .service-steps strong { color: var(--ink); font-weight: 600; }
-/* Message box: never resized sideways; no drag handle on touch screens, where scrolling caught it */
-.form textarea { resize: vertical; min-width: 100%; max-width: 100%; }
-@media (pointer: coarse) { .form textarea { resize: none; } }
+/* Message box: fixed size, no drag handle (it could be dragged out of shape on laptop and phone) */
+.form textarea { resize: none; width: 100%; min-height: 8em; }
