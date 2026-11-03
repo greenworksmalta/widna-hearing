@@ -417,3 +417,4 @@ body { line-height: 1.65; }
 .service-steps strong { color: var(--ink); font-weight: 600; }
 /* Message box: fixed size, no drag handle (it could be dragged out of shape on laptop and phone) */
 .form textarea { resize: none; width: 100%; min-height: 8em; }
+.services-note { margin: 24px 0 0; font-size: 1.1rem; font-weight: 600; }
