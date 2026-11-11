@@ -99,3 +99,8 @@ html.dark .faq-item summary { color: var(--white); }
 html.dark .faq-item summary::after { color: var(--sun); }
 html.dark .service-body .service-sub, html.dark .service-steps strong { color: var(--white); }
 html.dark .service-steps { color: var(--soft); }
+html.dark .review { background: var(--card); }
+html.dark .review blockquote { color: var(--text); }
+html.dark .review figcaption { color: var(--soft); }
+html.dark .review figcaption strong { color: var(--white); }
+html.dark .review-stars { color: var(--sun); }
